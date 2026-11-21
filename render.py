@@ -33,6 +33,8 @@ def font(name, size):
 
 
 F_SERIF_BLACK = font("NotoSerifDisplay-Black.ttf", 57)
+F_DATE = font("NotoSerifDisplay-Black.ttf", 62)
+F_NAME = font("NotoSerif-Bold.ttf", 25)
 F_SERIF_BOLD = font("NotoSerif-Bold.ttf", 21)
 F_SERIF_BOLD_S = font("NotoSerif-Bold.ttf", 17)
 F_SANS_BOLD = font("NotoSans-Bold.ttf", 12)
@@ -71,19 +73,19 @@ LEADS = [
         "head": "COP31 Talks Run Into Overtime as Fossil Fuels Vanish From the Draft",
         "body": (
             "The UN climate summit missed its Friday deadline and worked on "
-            "into Saturday, split over how fast the world should quit coal, "
-            "oil and gas after a draft deal dropped any mention of fossil "
-            "fuels at all."
+            "into Saturday -- day 13 -- split over how fast the world "
+            "should quit coal, oil and gas after a draft deal dropped any "
+            "mention of fossil fuels at all. (AFP, Al Jazeera)"
         ),
     },
     {
-        "kicker": "LEAD · NEW YORK",
-        "head": "Anthropic's $81 Billion Debut Is the Biggest IPO in History",
+        "kicker": "LEAD · JUNIN, PERU",
+        "head": "Magnitude 6.7 Earthquake Shakes Central Peru, Felt in Lima",
         "body": (
-            "The AI company raised $81.3 billion and opened near a $2 "
-            "trillion market value on Wall Street, a record first day -- in "
-            "the middle of an AI sell-off that turned into tech's worst "
-            "week since 2020."
+            "A deep quake struck near Carhuamayo at 00:09 GMT, some "
+            "108 km down. It rattled buildings in the capital and sent "
+            "residents into the streets; Peru's institute reported no "
+            "deaths, no major damage and no tsunami risk. (USGS)"
         ),
     },
 ]
@@ -92,20 +94,21 @@ SECTIONS = [
     ("EUROPE", [
         ("MISSILE HITS ZELENSKY'S HOMETOWN",
          "A Russian ballistic missile struck central Kryvyi Rih, killing "
-         "two people and wounding 60. Kyiv says Russia launched 3 missiles "
-         "and 148 drones overnight; 117 drones were downed."),
-        ("KYIV BRIDGES, POWER HIT",
-         "Russian strikes on the capital killed three people, injured "
-         "nine and damaged bridges and transport links, cutting power."),
-        ("CRIMEA BRIDGE HIT A THIRD TIME IN FOUR DAYS",
-         "Ukraine struck the Kerch bridge to Crimea again, its latest "
-         "blow against the supply line Russia uses to feed the peninsula."),
+         "two people and injuring dozens. Kyiv says Russia fired 3 "
+         "missiles and 148 drones overnight; 117 were downed."),
+        ("ZELENSKY: CRIMEA BRIDGE 'WILL NOT STAY'",
+         "Ukraine's president warned that the Kerch bridge to Crimea "
+         "will not stand, and spoke of more double-tap strikes to "
+         "come. (NBC)"),
+        ("COPENHAGEN EXPELS RUSSIAN ATTACHE",
+         "Denmark expelled a Russian attache over an alleged plot, "
+         "amid tensions over Greenland and Ukraine. (Al Jazeera)"),
         ("DENMARK RATIFIES GREENLAND DEAL 109-0",
-         "Parliament in Copenhagen voted unanimously for a security pact "
-         "that gives the United States two new bases in Greenland."),
+         "Copenhagen's parliament voted unanimously for a pact "
+         "giving the US two new bases in Greenland."),
         ("FRENCH POLICE SENTENCED IN ZECLER CASE",
-         "A Paris court sentenced the officers filmed in the racist "
-         "beating of music producer Michel Zecler, six years on."),
+         "A Paris court sentenced the officers filmed beating "
+         "music producer Michel Zecler. (AFP)"),
     ]),
     ("MIDDLE EAST", [
         ("SAUDI AIR DEFENCE DROPS 3 MISSILES OVER RIYADH",
@@ -115,9 +118,9 @@ SECTIONS = [
         ("IRAN READIES A TANKER CONVOY",
          "Tehran is preparing more than 14 oil tankers to sail through "
          "the US naval blockade, officials said."),
-        ("TWO TANKERS ATTACKED OFF OMAN",
-         "Britain's UKMTO reporting centre logged attacks on two "
-         "tankers near Khasab, at the mouth of the Gulf."),
+        ("IRAN SAYS IT DOWNED A US DRONE",
+         "Tehran says it shot down a US drone over the Strait of "
+         "Hormuz. Washington has not confirmed the claim. (IRIB)"),
         ("SIX KILLED IN ISRAELI STRIKES ON GAZA",
          "Medics in Gaza said Israeli strikes killed six people, as "
          "the future of the ceasefire stayed in doubt."),
@@ -128,8 +131,7 @@ SECTIONS = [
     ("ASIA", [
         ("THREE RIVALS SIGN SHENZHEN DECLARATION",
          "Trump, Xi and Putin met in Shenzhen and signed a four-point "
-         "peace declaration at their first summit together. It said "
-         "nothing about Ukraine."),
+         "peace declaration. It said nothing about Ukraine."),
         ("WORLD COURT: MYANMAR COMMITTED GENOCIDE",
          "The ICJ at The Hague found Myanmar responsible for genocide "
          "against the Rohingya, the first such ruling against a state."),
@@ -139,15 +141,15 @@ SECTIONS = [
         ("VIOLENCE FLARES BEFORE HASINA'S RETURN",
          "Clashes spread in Bangladesh as exiled former prime "
          "minister Sheikh Hasina planned her return to Dhaka."),
-        ("KOREA EXPORTS TOP $1 TRILLION",
-         "Exports topped $1 trillion in a year for the first time, "
-         "powered by chip demand."),
+        ("BEIJING TELLS TOKYO TO 'CORRECT' TAIWAN WORDS",
+         "China told Japan to correct its Taiwan remarks; "
+         "Tokyo's stance is unchanged. (AFP)"),
     ]),
     ("NORTH AMERICA", [
-        ("S&P 500 SLIDES 3.7% IN AI SELL-OFF",
-         "Wall Street's plunge led a global rout: Japan's Nikkei fell "
-         "5.06% and London's FTSE 100 lost 1.02% as investors doubted "
-         "AI spending will ever pay off."),
+        ("BITCOIN SLIPS BELOW $59,000",
+         "Bitcoin traded at $58,983 early on Saturday, down 3.9% in "
+         "a day, with ether at $1,625, as the AI stock sell-off "
+         "spread into crypto. (CoinGecko)"),
         ("TRUMP CURBS CONTRACTORS' WORD TO CONGRESS",
          "An executive order tells federal contractors to notify the "
          "White House before sharing information with Congress."),
@@ -192,9 +194,10 @@ SECTIONS = [
          "Ebola outbreak as teams race to contain it."),
     ]),
     ("OCEANIA · SCIENCE · SPORT", [
-        ("BEPICOLOMBO REACHES MERCURY AT LAST",
-         "After an eight-year cruise, the European-Japanese probe "
-         "slipped into orbit around Mercury."),
+        ("RUSSELL FASTEST IN LAS VEGAS PRACTICE",
+         "George Russell topped final practice for the Las Vegas "
+         "Grand Prix in 1:34.041, in a damp, messy session. "
+         "(Formula 1)"),
         ("AIR NIUGINI JET LANDS SAFELY",
          "An Air Niugini flight made an emergency landing in Papua "
          "New Guinea; everyone on board was safe."),
@@ -209,9 +212,10 @@ SECTIONS = [
          "for autonomous weapons. No binding limits were set."),
     ]),
     ("THE DAY IN NUMBERS", [
-        ("$81.3 BILLION",
-         "raised by Anthropic in the largest stock-market debut "
-         "ever recorded, ahead of its first day of trading."),
+        ("DAY 13 AT COP31",
+         "the Antalya climate summit was planned to close on day "
+         "12; it ran into overtime with no fossil-fuel text "
+         "agreed."),
         ("148 DRONES, 3 MISSILES",
          "launched by Russia at Ukraine overnight, Kyiv says; air "
          "defences brought down 117 of the drones."),
@@ -227,9 +231,9 @@ SECTIONS = [
     ]),
 ]
 
-TICKER = ("MARKETS   S&P 500 6,910  -3.70%   ·   NIKKEI -5.06%   ·   "
-          "FTSE 100 10,346  -1.02%   ·   BRENT $89.95  +0.57%   ·   "
-          "BITCOIN AT A TWO-YEAR LOW   ·   GAS $3.75  +1.82%")
+TICKER = ("ALL 35 STORIES DATED SATURDAY 21 NOVEMBER 2026   ·   MARKETS: "
+          "S&P 500 6,910  -3.70%   ·   NIKKEI -5.06%   ·   FTSE 100  -1.02%   ·   "
+          "BRENT $89.95  +0.57%   ·   BITCOIN $58,983")
 
 # Dotted world map on a 96x24 grid (columns ~ longitude, rows ~
 # latitude). Each row lists the land spans as (first, last) columns.
@@ -269,21 +273,21 @@ MAP_DOTS = [
     (58, 13),   # southern Ethiopia
     (87, 15),   # Papua New Guinea
 ]
-MAP_CAPTION = ("WHERE THE DAY HAPPENED:  1 Antalya COP31  ·  2 Ukraine strikes  ·  "
+MAP_CAPTION = ("WHERE IT HAPPENED:  1 Antalya COP31  ·  2 Ukraine  ·  "
                "3 Riyadh missiles  ·  4 Shenzhen summit  ·  5 Peru quake  ·  "
-               "6 Sinaloa capture  ·  7 Ethiopia displacement  ·  8 Air Niugini landing")
+               "6 Sinaloa capture  ·  7 Ethiopia  ·  8 Air Niugini")
 
 
 def draw_map(draw, x, y, w, h):
     cell_w = w / MAP_COLS
     cell_h = h / MAP_NROWS
-    r = max(1.0, min(cell_w, cell_h) * 0.30)
+    r = max(1.0, min(cell_w, cell_h) * 0.55)
     for ri, spans in MAP_SPANS.items():
         for first, last in spans:
             for ci in range(first, last + 1):
                 cx = x + (ci + 0.5) * cell_w
                 cy = y + (ri + 0.5) * cell_h
-                draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(96, 90, 78))
+                draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(84, 78, 66))
     for ci, ri in MAP_DOTS:
         cx = x + (ci + 0.5) * cell_w
         cy = y + (ri + 0.5) * cell_h
@@ -307,7 +311,7 @@ def draw_lead(draw, x, y, w, lead):
 def draw_section(draw, x, y, w, title, stories):
     draw.text((x, y), title, font=F_SEC, fill=RED)
     draw.line([x, y + 19, x + w, y + 19], fill=INK, width=2)
-    y += 25
+    y += 24
     for head, body in stories:
         for line in wrap_px(draw, head, F_HEAD, w):
             draw.text((x, y), line, font=F_HEAD, fill=INK)
@@ -315,7 +319,7 @@ def draw_section(draw, x, y, w, title, stories):
         for line in wrap_px(draw, body, F_BODY, w):
             draw.text((x, y), line, font=F_BODY, fill=(52, 48, 40))
             y += 11
-        y += 5
+        y += 4
     return y
 
 
@@ -324,45 +328,50 @@ def main():
     draw = ImageDraw.Draw(img)
 
     # --- masthead ------------------------------------------------------
-    kicker = "T H E   W O R L D   I N   O N E   P A G E"
+    kicker = "T H E   H O R I Z O N   P O S T"
     kw = draw.textlength(kicker, font=F_SANS_BOLD_S)
-    draw.text(((W - kw) / 2, 12), kicker, font=F_SANS_BOLD_S, fill=GREY)
-    draw.line([MARGIN, 30, W - MARGIN, 30], fill=INK, width=3)
+    draw.text(((W - kw) / 2, 10), kicker, font=F_SANS_BOLD_S, fill=GREY)
+    draw.line([MARGIN, 28, W - MARGIN, 28], fill=INK, width=3)
 
-    name = "The Horizon Post"
-    nw = draw.textlength(name, font=F_SERIF_BLACK)
-    draw.text(((W - nw) / 2, 36), name, font=F_SERIF_BLACK, fill=INK)
-    draw.line([MARGIN, 104, W - MARGIN, 104], fill=INK, width=1)
+    name = "The Horizon Post — the world in one page"
+    nw = draw.textlength(name, font=F_NAME)
+    draw.text(((W - nw) / 2, 34), name, font=F_NAME, fill=INK)
 
-    # --- date band ------------------------------------------------------
-    draw.rectangle([MARGIN, 110, W - MARGIN, 142], fill=DARK)
-    date = "SATURDAY, 21 NOVEMBER 2026"
-    dw = draw.textlength(date, font=F_BAND)
-    draw.text(((W - dw) / 2, 116), date, font=F_BAND, fill=(250, 247, 238))
-    draw.text((MARGIN + 10, 121), "35 STORIES", font=F_BAND_S, fill=(206, 198, 178))
+    # the date is the headline: no reader can miss which day this is
+    date = "Saturday 21 November 2026"
+    dw = draw.textlength(date, font=F_DATE)
+    draw.text(((W - dw) / 2, 62), date, font=F_DATE, fill=INK)
+    draw.line([MARGIN, 132, W - MARGIN, 132], fill=INK, width=1)
+
+    # --- count band ------------------------------------------------------
+    draw.rectangle([MARGIN, 138, W - MARGIN, 162], fill=DARK)
+    draw.text((MARGIN + 10, 145), "35 STORIES", font=F_BAND_S, fill=(206, 198, 178))
+    mid = "EVERY ONE DATED SATURDAY 21 NOVEMBER 2026"
+    mw = draw.textlength(mid, font=F_BAND_S)
+    draw.text(((W - mw) / 2, 145), mid, font=F_BAND_S, fill=(250, 247, 238))
     r_txt = "7 REGIONS"
-    draw.text((W - MARGIN - 10 - draw.textlength(r_txt, font=F_BAND_S), 121),
+    draw.text((W - MARGIN - 10 - draw.textlength(r_txt, font=F_BAND_S), 145),
               r_txt, font=F_BAND_S, fill=(206, 198, 178))
 
     # --- leads + map row -------------------------------------------------
-    top = 154
+    top = 174
     lead_w = 300
     draw_lead(draw, MARGIN, top, lead_w, LEADS[0])
     map_x = MARGIN + lead_w + 18
     map_w = CW - 2 * lead_w - 36
     draw.text((map_x, top), "THE WORLD ON SATURDAY", font=F_KICK, fill=RED)
-    draw_map(draw, map_x, top + 15, map_w, 106)
+    draw_map(draw, map_x, top + 15, map_w, 100)
     cap_lines = wrap_px(draw, MAP_CAPTION, F_SANS_BOLD_S, map_w)
-    cy = top + 126
+    cy = top + 120
     for line in cap_lines:
         draw.text((map_x, cy), line, font=F_SANS_BOLD_S, fill=GREY)
         cy += 12
     draw_lead(draw, MARGIN + CW - lead_w, top, lead_w, LEADS[1])
-    draw.line([MARGIN + lead_w + 9, top, MARGIN + lead_w + 9, top + 160],
+    draw.line([MARGIN + lead_w + 9, top, MARGIN + lead_w + 9, top + 152],
               fill=HAIR, width=1)
-    draw.line([MARGIN + CW - lead_w - 9, top, MARGIN + CW - lead_w - 9, top + 160],
+    draw.line([MARGIN + CW - lead_w - 9, top, MARGIN + CW - lead_w - 9, top + 152],
               fill=HAIR, width=1)
-    grid_top = top + 168
+    grid_top = top + 160
     draw.line([MARGIN, grid_top - 6, W - MARGIN, grid_top - 6], fill=INK, width=2)
 
     # --- regional grid: 4 columns x 2 rows -------------------------------

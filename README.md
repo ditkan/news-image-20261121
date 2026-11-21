@@ -13,8 +13,10 @@ sum up the world's news of Saturday 21 November 2026 in one image.
 A complete newspaper front page for the day, drawn by code:
 
 - **Two leads** — the COP31 climate talks in Antalya running into
-  overtime after fossil fuels vanished from the draft, and Anthropic's
-  $81.3 billion stock-market debut, the biggest IPO in history.
+  overtime (day 13) after fossil fuels vanished from the draft, and
+  the magnitude 6.7 earthquake in Peru's Andes, felt in Lima. The
+  date itself is the page's biggest headline, and every story is
+  dated Saturday 21 November 2026.
 - **A dotted world map** with the day's eight biggest datelines ringed.
 - **35 stories across 7 regions** — Europe, the Middle East, Asia,
   North America, Latin America, Africa, and Oceania with science and
